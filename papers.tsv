@@ -1,0 +1,47 @@
+ID	Title	Type	Archival?	attendance	author	email	co-author
+2	Towards Faithful Explanations for Text Classification with Robustness Improvement and Explanation Guided Training	Poster	achival	online	"Dongfang Li, Baotian Hu, Qingcai Chen and Shan He"	crazyofapple@gmail.com	
+3	Driving Context into Text-to-Text Privatization	Talk	achival	In-person	"Stefan Arnold, Dilara Yesilbas and Sven Weinzierl"	stefan.st.arnold@fau.de	
+5	Automated Ableism: An Exploration of Explicit Disability Biases in Sentiment and Toxicity Analysis Models	Poster	achival	Maybe in-person	"Pranav Narayanan Venkit, Mukund Srinath and Shomir Wilson"	pnv5011@psu.edu	
+6	Pay Attention to the Robustness of Chinese Minority Language Models! Syllable-level Textual Adversarial Attack on Tibetan Script	Poster	achival	Maybe in-person	"Xi Cao, Dolma Dawa, Nuo Qun and Trashi Nyima"	metaphor@outlook.com	
+8	Can we trust the evaluation on ChatGPT?	Poster	achival	online	"Rachith Aiyappa, Jisun An, Haewoon Kwak and Yong-Yeol Ahn"	racball@iu.edu	
+10	Improving Factuality of Abstractive Summarization via Contrastive Reward Learning	Poster	achival		"I-Chun Chern, Zhiruo Wang, Sanjan Das, Bhavuk Sharma, Pengfei Liu and Graham Neubig"	ethanicchern@gmail.com	
+11	Examining the Causal Impact of First Names on Language Models: The Case of Social Commonsense Reasoning	Poster	achival	Maybe in-person	"Sullam Jeoung, Jana Diesner and Halil Kilicoglu"	sjeoung2@illinois.edu	
+12	Reliability Check: An Analysis of GPT-3's Response to Sensitive Topics and Prompt Wording	Poster	achival	In-person	Aisha Khatun and Daniel G. Brown	a2khatun@uwaterloo.ca	
+13	On the Privacy Risk of In-context Learning	Poster	non-archival	In-person	"Haonan Duan, Adam Dziedzic, Mohammad Yaghini, Nicolas Papernot and Franziska Boenisch"	haonand@cs.toronto.edu	
+16	Sample Attackability in Natural Language Adversarial Attacks	Poster	achival	Maybe in-person	Vyas Raina and Mark Gales	vr313@cam.ac.uk	
+17	A Keyword Based Approach to Understanding the Overpenalization of Marginalized Groups by English Marginal Abuse Models on Twitter	Talk	achival	online	"Kyra Yee, Alice Schoenauer Sebag, Olivia Redfield, Matthias Eck, Emily Sheng and Luca Belli"	kyrayee9@gmail.com	
+18	An Empirical Study of Metrics to Measure Representational Harms in Pre-Trained Language Models	Poster	achival	Maybe in-person	"Saghar Hosseini, Hamid Palangi and Ahmed Hassan Awadallah"	saghar.hossaini@gmail.com	
+20	Linguistic Properties of Truthful Response	Poster	achival	Maybe in-person	"Bruce W. Lee, Benedict Florance Arockiaraj and Helen Jin"	brucelws@seas.upenn.edu	
+21	Debunking Biases in Attention	Poster	achival	online	"Shijing Chen, Usman Naseem and Imran Razzak"	arthurchen1028@gmail.com	
+22	Guiding Text-to-Text Privatization by Syntax	Poster	achival	In-person	Stefan Arnold and Dilara Yesilbas	stefan.st.arnold@fau.de	
+23	Differentially Private In-Context learning	Poster	non-archival	Maybe in-person	"Ashwinee Panda, Tong Wu, Jiachen Wang and Prateek Mittal"	ashwinee@princeton.edu	
+25	Are fairness metric scores enough to assess discrimination biases in machine learning?	Talk	achival	In-person	"Fanny Jourdan, Laurent Risser, Jean-Michel Loubes and Nicholas Asher"	fanny.jourdan@irit.fr	
+26	DEPTH+: An Enhanced Depth Metric for Wikipedia Corpora Quality	Poster	achival	online	"Saied Alshahrani, Norah Alshahrani and Jeanna Matthews"	alshahsf@clarkson.edu	
+27	Distinguishing Fact from Fiction: A Benchmark Dataset for Identifying Machine-Generated Scientific Papers in the LLM Era.	Poster	achival	In-person	"Edoardo Mosca, Mohamed Hesham Ibrahim Abdalla, Paolo Basso, Margherita Musumeci and Georg Groh"	edoardo.mosca@tum.de	
+28	Detecting Personal Information in Training Corpora: an Analysis	Poster	achival	In-person	"Nishant Subramani, Sasha Luccioni, Jesse Dodge and Margaret Mitchell"	sashavluccioni@gmail.com	
+29	Enhancing textual counterfactual explanation intelligibility through Counterfactual Feature Importance	Poster	achival	Maybe in-person	"Milan Bhan, Jean-Noel Vittaut, Nicolas Chesneau and Marie-Jeanne Lesot"	milan.bhan@ekimetrics.com	
+32	Privacy- And Utility-Preserving NLP with Anonymized data: A case study of Pseudonymization	Poster	achival	Maybe in-person	"Oleksandr Yermilov, Vipul Raheja and Artem Chernodub"	vr2337@columbia.edu	
+35	Can NLP Models Identify, Distinguish, and Justify Questions that Don't have a Definitive Answer?	Poster	non-archival	online	"Ayushi Agarwal, Nisarg Patel, Neeraj Varshney, Mihir Parmar, Pavan Mallina, Aryan Shah, Srihari Raju Sangaraju, Tirth Patel, Nihar Thakkar and Chitta Baral"	nvarshn2@asu.edu	
+36	SMoA: Sparse Mixture of Adapters to Mitigate Multiple Dataset Biases	Poster	non-archival	online	"Yanchen Liu, Jing Yan, Yan Chen, Jing Liu and Hua Wu"	314136482@qq.com	
+37	GPTs Don't Keep Secrets: Searching for Backdoor Watermark Triggers in Autoregressive Language Models	Talk	achival	In-person	Evan Lucas and Timothy Havens	eglucas@mtu.edu	
+38	Make Text Unlearnable: Exploiting Effective Patterns to Protect Personal Data	Poster	achival	online	Xinzhe Li and Ming Liu	sergioli212@outlook.com	
+41	Bias Beyond English: Counterfactual Tests for Bias in Sentiment Analysis in Four Languages	Poster	non-archival	In-person	"Seraphina Goldfarb-Tarrant, Adam Lopez, Roi Blanco and Diego Marcheggiani"	seraphinatarrant@gmail.com	
+42	Training Data Extraction From Pre-trained Language Models: A Survey	Poster	achival	online	Shotaro Ishihara	shotaro.ishihara@nex.nikkei.com	
+43	Expanding Scope: Adapting English Adversarial Attacks to Chinese	Poster	achival	online	"Hanyu Liu, Chengyuan Cai and Yanjun Qi"	hl2gn@virginia.edu	
+45	IMBERT: Making BERT Immune to Insertion-based Backdoor Attacks	Poster	achival	online	"Xuanli He, Jun Wang, Benjamin Rubinstein and Trevor Cohn"	zodiachy@gmail.com	
+46	Large Language Models with Controllable Working Memory	Poster	non-archival	Maybe in-person	"Daliang Li, Ankit Singh Rawat, Manzil Zaheer, Xin Wang, Michal Lukasik, Andreas Veit, Felix Yu and Sanjiv Kumar"	daliangli@google.com	
+47	On The Real-world Performance of Machine Translation: Exploring Social Media Post-authors' Perspectives	Poster	achival	In-person	"Ananya Gupta, Jae D. Takeuchi and Bart Knijnenburg"	ananyag@g.clemson.edu	
+48	ActiveAED: A Human in the Loop Improves Annotation Error Detection	Poster	non-archival	In-person	Leon Weber and Barbara Plank	leonweber@posteo.de	
+49	Shielded Representations: Protecting Sensitive Attributes Through Iterative Gradient-Based Projection	Poster	non-archival	In-person	"Shadi Iskander, Kira Radinsky and Yonatan Belinkov"	shadi.isk@campus.technion.ac.il	
+50	Keeping Up with the Language Models: Robustness-Bias Interplay in NLI Data and Models	Poster	non-archival	In-person	"Ioana Baldini, Chhavi Yadav, Payel Das and Kush Varshney"	ioana@us.ibm.com	
+51	Enabling Classifiers to Make Judgements Explicitly Aligned with Human Values	Poster	achival	Maybe in-person	"Yejin Bang, Tiezheng Yu, Andrea Madotto, Zhaojiang Lin, Mona Diab and Pascale Fung"	yjbang@connect.ust.hk	
+52	This Prompt is Measuring <MASK>: Evaluating Bias Evaluation in Language Models	Poster	non-archival	In-person	"Seraphina Goldfarb-Tarrant, Eddie Ungless, Esma Balkir and Su Lin Blodgett"	seraphinatarrant@gmail.com	
+53	COCKATIEL: COntinuous Concept ranKed ATtribution with Interpretable ELements for explaining neural net classifiers on NLP tasks	Poster	non-archival	In-person	"Fanny Jourdan, Agustin Picard, Laurent Risser, Jean-Michel Loubes and Nicholas Asher"	fanny.jourdan@irit.fr	
+54	Strength in Numbers: Estimating Confidence of Large Language Models by Prompt Agreement	Poster	achival	In-person	"Gwenyth Portillo Wightman, Alexandra DeLucia and Mark Dredze"	gwenythwightman@gmail.com	
+55	Adversarial Named-Entity Recognition with Word Attributions and Disentanglement	Poster	non-archival		"Xiaomeng Jin, Bhanukiran Vinzamuri, Sriram Venkatapathy, Heng Ji and Pradeep Natarajan"	xjin17@illinois.edu	
+56	Characterizing Political Bias in Automatic Summaries: A Case Study of Trump and Biden	Poster	non-archival	In-person	Karen Zhou and Chenhao Tan	karenzhou@uchicago.edu	
+57	Model-tuning Via Prompts Makes NLP Models Adversarially Robust	Poster			"Mrigank Raman, Pratyush Maini, Zico Kolter, Zachary C. Lipton and Danish Pruthi"	mt1170736@iitd.ac.in	
+59	Mitigating Bias for Question Answering Models by Tracking Bias Influence	Poster	non-archival	In-person	"Mingyu Derek Ma, Jiun-Yu Kao, Arpit Gupta, Yu-Hsiang Lin, Wenbo Zhao, Tagyoung Chung, Kai-Wei Chang and Nanyun Peng"	derek.ma@ucla.edu	
+60	PromptAttack: Probing Dialogue State Trackers with Adversarial Prompts	Poster	non-archival	Maybe in-person	"Xiangjue Dong, Yun He, Ziwei Zhu and James Caverlee"	xj.dong@tamu.edu	
+61	Defending against Insertion-based Textual Backdoor Attacks via Attribution	Poster	non-archival	In-person	"Jiazhao Li, Zhuofeng Wu, Wei Ping, Chaowei Xiao, V.G. Vinod Vydiswaran"	jiazhaol@umich.edu	
+62	FORK: A Bite-Sized Test Set for Probing Culinary Cultural Biases in Commonsense Reasoning Models	Poster	non-archival	In-person	Shramay Palta and Rachel Rudinger	spalta@cs.umd.edu	
