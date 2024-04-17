@@ -221,60 +221,84 @@
     </div>
   </section>
 
+   <style>
+    .speaker-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+   
+    .speaker-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   </style>
+
   <section id="talk" class="bg-light">
     <div class="container">
+      <div class="col-lg-8 mx-auto">   
+        
+        
         <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>Invited Speakers</h2>
+          <h2>Invited Speakers</h2>        
 
-                <div class="speaker">
-                    <h4>Jieyu Zhao</h4>
-                    <p class="speaker-info">
-                        <strong>Title:</strong> Assistant Professor, University of Southern California
+                    <div class="speaker">
+                      <div class="speaker-photo">
+                        <img src="speakers/jieyu.jpg" alt="Jieyu Zhao">
+                      </div>          
+                      <h4>Jieyu Zhao </h4>          
+                    <h5><strong>Assistant Professor, University of Southern California</strong></h5>
+                      <p class="bio">
+                        <!-- <strong>Bio:</strong>  -->
+                        <a href="https://jyzhao.net">Jieyu Zhao</a> is an assistant professor of Computer Science Department at University of Southern California. Prior to that, she was an NSF Computing Innovation Fellow at University of Maryland, College Park. Jieyu received her Ph.D. from Computer Science Department, UCLA. Her research interest lies in fairness of ML/NLP models. Her paper got the EMNLP Best Long Paper Award (2017). She was one of the recipients of 2020 Microsoft PhD Fellowship and has been selected to participate in 2021 Rising Stars in EECS workshop. Her research has been covered by news media such as Wires, The Daily Mail and so on. She was invited by UN-WOMEN Beijing on a panel discussion about gender equality and social responsibility.
                     </p>
-                    <!-- <div class="abstract">
-                        <p><strong>Abstract:</strong></p>
-                        add here
-                    </div>
-                    <div class="bio">
-                        <p><strong>Bio:</strong></p>
-                        add here
-                    </div>
-                </div> -->
+                    <h5><strong>Talk Title:</strong> Building Accountable NLP Models for Social Good</h5>
+                      
+                    <p class="talk">
+                      The rapid advancement of natural language processing (NLP) technologies has unlocked a myriad of possibilities for positive societal impact, ranging from enhancing accessibility and communication to supporting disaster response and public health initiatives. However, the deployment of these technologies also raises critical concerns regarding accountability, fairness, transparency, and ethical use. In this talk, I will discuss  our efforts for auditing NLP models, detecting and mitigating biases, and understanding how LLMs make decisions. We hope to open the conversation to foster a community-wide effort towards more accountable and inclusive NLP practices.
+                  </p>
+                </div>  
                 </div>
+                <br>
+            <div class="row">                              
 
                 <div class="speaker">
-                    <h4>Prasanna Sattigeri</h4>
-                    <p class="speaker-info">
-                        <strong>Title:</strong> Principal Research Scientist, IBM Research
-                    </p>
-                    <!-- <div class="abstract">
-                        <p><strong>Abstract:</strong></p>
-                        add here
-                    </div>
-                    <div class="bio">
-                        <p><strong>Bio:</strong></p>
-                        add here
-                    </div>
-                </div> -->
-                </div>
+                  <div class="speaker-photo">
+                    <img src="speakers/prasanna.jpg" alt="Jieyu Zhao">
+                  </div>                   
+                  <h4>Prasanna Sattigeri</h4>
+                  <h5><strong>Principal Research Scientist, IBM Research</strong></h5>
+                    <p class="bio">
+                      <!-- <strong>Bio:</strong>  -->
+                      <a href="https://pronics2004.github.io/">Prasanna Sattigeri</a> is a Principal Research Scientist at IBM Research AI and the MIT-IBM Watson AI Lab, where his primary focus is on developing reliable AI solutions. His research interests encompass areas such as generative modeling, uncertainty quantification, and learning with limited data. His current projects are focused on the governance and safety of large language models (LLMs), aiming to establish both theoretical frameworks and practical systems that ensure these models are reliable and trustworthy. He has played a significant role in the development of several well-known open-source trustworthy AI toolkits, including AI Fairness 360, AI Explainability 360, and Uncertainty Quantification 360.
+                  </p>
+                  <p class="talk">
+                  <h5><strong>Talk Title:</strong> TBD </h5>
+                </p>
 
-                <div class="speaker">
-                    <h4>Ahmad Beirami</h4>
-                    <p class="speaker-info">
-                        <strong>Title:</strong> Research Scientist, Google Research
-                    </p>
-                    <!-- <div class="abstract">
-                        <p><strong>Abstract:</strong></p>
-                        add here
-                    </div>
-                    <div class="bio">
-                        <p><strong>Bio:</strong></p>
-                        add here
-                    </div>
-                </div> -->
+              </div> 
+              </div>               
+              <br>
 
-            </div>
+              <div class="row">  
+              <div class="speaker">
+                <div class="speaker-photo">
+                  <img src="speakers/ahmad.jpg" alt="Jieyu Zhao">
+                </div>                 
+                <h4>Ahmad Beirami</h4>
+                <h5><strong>Research Scientist, Google Research</strong></h5>
+                  <p class="bio"></p>
+                    <!-- <strong>Bio:</strong>  -->
+                    <a href="https://sites.google.com/view/beirami">Ahmad Beirami</a> is a research scientist at Google Research, co-leading  a research team on building safe, helpful, and scalable generative language models. At Meta AI, he led research to  power the next generation of virtual digital assistants with AR/VR capabilities through robust generative language modeling. At Electronic Arts, he led the AI agent research program for automated playtesting of video games and cooperative reinforcement learning. Before moving to industry in 2018, he held a joint postdoctoral fellow position at Harvard & MIT, focused on problems in the intersection of core machine learning and information theory. He is the recipient of the 2015 Sigma Xi Best PhD Thesis Award from Georgia Tech.
+                </p>
+                <h5><strong>Talk Title:</strong> TBD </h5>
+              </div>
+            </div>  
+            <br>
+
         </div>
     </div>
 </section>
@@ -306,23 +330,64 @@
   <section id="people" class="bg-light">
     <div class="container">
       
+      <div class="row">
       <div class="col-lg-8 mx-auto" style="margin-top: -300px;">
+        
 
           <h2>Committee</h2>
           <p class="lead">Organizers</p>
-            <ul>
-              <li>	  <a href="http://scf.usc.edu/~ninarehm/"> Ninareh Mehrabi</a> - Amazon Alexa AI </li>
-                <li>    <a href="https://anaeliaovalle.github.io/"> Anaelia Ovalle</a> - UCLA</li>
-                <li>    <a href="https://anaeliaovalle.github.io/"> Jieyu Zhao</a> - USC</li>
-		    <li>    <a href="http://web.cs.ucla.edu/~kwchang/"> Kai-Wei Chang </a> - UCLA, Amazon Scholar</li>
-              <li>    <a href="https://www.isi.edu/people/galstyan/about"> Aram Galystan </a> - USC, Amazon Scholar</li>
-              <li>    <a href="https://jwaladhamala.com/"> Jwala Dhamala</a> - Amazon Alexa AI</li>
-              <li>    <a href="http://ycao95.umiacs.io/"> Yang Trista Cao</a> - University of Maryland</li>
-              <li> <a href="https://www.amazon.science/author/anoop-kumar">Anoop Kumar </a> - Amazon Alexa AI </li>
-                <li>    <a href="https://guptarah.github.io/"> Rahul Gupta</a> - Amazon Alexa AI</li>
-	        </ul>  	
-  
-          <!-- <p class="lead">Program committee</p> -->
+          <ul>
+            <li><a href="http://scf.usc.edu/~ninarehm/">Ninareh Mehrabi</a> - Amazon Alexa AI</li>
+            <li><a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a> - UCLA, Amazon Visiting Academic</li>
+            <li><a href="https://www.isi.edu/people/galstyan/about">Aram Galystan</a> - USC, Amazon Visiting Academic</li>
+            <li><a href="https://jwaladhamala.com/">Jwala Dhamala</a> - Amazon Alexa AI</li>
+            <li><a href="https://anaeliaovalle.github.io/">Anaelia Ovalle</a> - UCLA</li>
+            <li><a href="http://ycao95.umiacs.io/">Yang Trista Cao</a> - University of Maryland</li>
+            <li><a href="https://www.amazon.science/author/anoop-kumar">Anoop Kumar</a> - Amazon Alexa AI</li>
+            <li><a href="https://guptarah.github.io/">Rahul Gupta</a> - Amazon Alexa AI</li>
+          </ul>
+        
+          
+          <p class="lead">Program Committee</p>
+          <ul>
+            <li>Saied Alshahrani</li>
+            <li>Connor Baumler</li>
+            <li>Gagan Bhatia</li>
+            <li>Keith Burghardt</li>
+            <li>Yang Trista Cao</li>
+            <li>Javier Carnerero Cano</li>
+            <li>Canyu Chen</li>
+            <li>Xinyue Chen</li>
+            <li>Jwala Dhamala</li>
+            <li>Árdís Elíasdóttir</li>
+            <li>Aram Galstyan</li>
+            <li>Usman Gohar</li>
+            <li>Zihao He</li>
+            <li>Pengfei He</li>
+            <li>Qian Hu</li>
+            <li>Satyapriya Krishna</li>
+            <li>Jooyoung Lee</li>
+            <li>Yanan Long</li>
+            <li>Subho Majumdar</li>
+            <li>Ninareh Mehrabi</li>
+            <li>Sahil Mishra</li>
+            <li>Isar Nejadgholi</li>
+            <li>Huy Nghiem</li>
+            <li>Anaelia Ovalle</li>
+            <li>Jieyu Zhao</li>
+            <li>Aishwarya Padmakumar</li>
+            <li>Kartik Perisetla</li>
+            <li>Salman Rahman</li>
+            <li>Chahat Raj</li>
+            <li>Anthony Rios</li>
+            <li>Patricia Thaine</li>
+            <li>Simon Yu</li>
+            <li>Xinlin Zhuang</li>
+            <li>Chupeng Zhang</li>
+            <li>Chenyang Zhu</li>
+          </ul>
+          
+        </div>
       </div>
     </div>
 
