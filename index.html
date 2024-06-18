@@ -25,41 +25,40 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">TrustNLP @ NAACL 2024</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#call_for_papers">Call for papers</a>
-          </li>          
-	 <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#talk">Speakers</a>
-          </li>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">TrustNLP @ NAACL 2024</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#call-for-papers">Call for Papers</a>
         </li>          
-	 <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#papers">Papers</a>
-          </li> -->
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#people">People</a>
-          </li>
-         <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a> 
+        </li>          
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#papers">Papers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#people">People</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <header class=" text-white" style="background-image: url('index.jpg')">
     <div class="container text-center">
@@ -82,13 +81,13 @@
 
 
 
-
-
 	
-<section id="call_for_papers" class="bg-light">
+<section id="call-for-papers" class="bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto" style="margin-top: -150px;">
+      <!-- <div class="col-lg-8 mx-auto" tyle="margin-top: -150px;"> -->
+        <div class="col-lg-8 mx-auto">
+
         <h2>Call for Papers</h2>
         <h4>Topics</h4>
         <p>We invite papers which focus on different aspects of <em>safe</em> and <em>trustworthy</em> language modeling. Topics of interest include (but are not limited to): 
@@ -111,7 +110,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="container", style="margin-top: 40px;">
     <div class="row">
@@ -216,28 +214,9 @@
 
 
 
-        </div>
-      </div>
-    </div>
-  </section>
 
-   <style>
-    .speaker-photo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-   
-    .speaker-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-   </style>
+  <section id="speakers" class="bg-light">
 
-  <section id="talk" class="bg-light">
     <div class="container">
       <div class="col-lg-8 mx-auto">   
         
@@ -325,15 +304,20 @@
     </div>
 </section>
 
+
+
+
 <section id="schedule" class="bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto" style="margin-top: -100px;">
-        <h2>Schedule</h2>
+      <div class="col-lg-8 mx-auto"> 
+        
+      <!-- </div> style="margin-top: -100px;"> -->
+        <h2>Schedule </h2>
         <table>
           <tr>
             <th>Name</th>
-            <th>Time</th>
+            <th>Time (Mexico City Time, UTC−06:00)</th>
           </tr>
           <tr>
             <td>Opening remarks</td>
@@ -357,7 +341,7 @@
           </tr>
           <tr>
             <td><strong>Keynote 4</strong> (Prasanna Sattigeri)</td>
-            <td>11:5am - 12:30pm</td>
+            <td>11:50am - 12:30pm</td>
           </tr>
           <tr>
             <td><strong>Lunch</strong></td>
@@ -388,19 +372,130 @@
   <section id="call_for_papers" class="bg-light">
   </section>
 
-  <!-- <section id="papers">
+  <section id="papers">
     <div class="container">
+      <div class="row">
       <div class="col-lg-8 mx-auto">
-
+        <h2>Accepted Papers</h2>
+        <ul>
+          <li>
+            <a href="papers/1.pdf" target="_blank">Beyond Turing: A Comparative Analysis of Approaches for Detecting Machine-Generated Text</a>
+            <br>
+            <em>Muhammad Farid Adilazuarda</em>
+          </li>
+          <li>
+            <a href="papers/2.pdf" target="_blank">Automated Adversarial Discovery for Safety Classifiers</a>
+            <br>
+            <em>Yash Kumar Lal, Preethi Lahoti, Aradhana Sinha, Yao Qin and Ananth Balashankar</em>
+          </li>
+          <li>
+            <a href="papers/3.pdf" target="_blank">FairBelief - Assessing Harmful Beliefs in Language Models</a>
+            <br>
+            <em>Mattia Setzu, Marta Marchiori Manerba, Pasquale Minervini and Debora Nozza</em>
+          </li>
+          <li>
+            <a href="papers/4.pdf" target="_blank">The Trade-off between Performance, Efficiency, and Fairness in Adapter Modules for Text Classification</a>
+            <br>
+            <em>Minh Duc Bui and Katharina von der Wense</em>
+          </li>
+          <li>
+            <a href="papers/5.pdf" target="_blank">When XGBoost Outperforms GPT-4 on Text Classification: A Case Study</a>
+            <br>
+            <em>Matyas Bohacek and Michal Bravansky</em>
+          </li>
+          <li>
+            <a href="papers/7.pdf" target="_blank">Towards Healthy AI: Large Language Models Need Therapists Too</a>
+            <br>
+            <em>Baihan Lin, Djallel Bouneffouf, Guillermo Cecchi and Kush R. Varshney</em>
+          </li>
+          <li>
+            <a href="papers/8.pdf" target="_blank">Exploring Causal Mechanisms for Machine Text Detection Methods</a>
+            <br>
+            <em>KiYoon Yoo, Wonhyuk Ahn, Yeji Song and Nojun Kwak</em>
+          </li>
+          <li>
+            <a href="papers/11.pdf" target="_blank">FactAlign: Fact-Level Hallucination Detection and Classification Through Knowledge Graph Alignment</a>
+            <br>
+            <em>Mohamed Rashad, Ahmed Ismail Zahran, Abanoub Amgad Amin, Amr Yassin Abdelaal and Mohamed AlTantawy</em>
+          </li>
+          <li>
+            <a href="papers/13.pdf" target="_blank">Cross-Task Defense: Instruction-Tuning LLMs for Content Safety</a>
+            <br>
+            <em>Yu Fu, Wen Xiao, Jia Chen, Jiachen Li, Evangelos Papalexakis, Aichi Chien and Yue Dong</em>
+          </li>
+          <li>
+            <a href="papers/15.pdf" target="_blank">On the Interplay between Fairness and Explainability</a>
+            <br>
+            <em>Stephanie Brandl, Emanuele Bugliarello and Ilias Chalkidis</em>
+          </li>
+          <li>
+            <a href="papers/18.pdf" target="_blank">Holistic Evaluation of Large Language Models: Assessing Robustness, Accuracy, and Toxicity for Real-World Applications</a>
+            <br>
+            <em>David Cecchini, Arshaan Nazir, Kalyan Chakravarthy and Veysel Kocaman</em>
+          </li>
+          <li>
+            <a href="papers/19.pdf" target="_blank">HGOT: Hierarchical Graph of Thoughts for Retrieval-Augmented In-Context Learning in Factuality Evaluation</a>
+            <br>
+            <em>Yihao Fang, Stephen W. Thomas and Xiaodan Zhu</em>
+          </li>
+          <li>
+            <a href="papers/22.pdf" target="_blank">Overconfidence is Key: Verbalized Uncertainty Evaluation in Large Language and Vision-Language Models</a>
+            <br>
+            <em>Tobias Groot and Matias Valdenegro-Toro</em>
+          </li>
+          <li>
+            <a href="papers/29.pdf" target="_blank">Tweak to Trust: Assessing the Reliability of Summarization Metrics in Contact Centers via Perturbed Summaries</a>
+            <br>
+            <em>Kevin Niranjanbhai Patel, Suraj Agrawal and Ayush Kumar</em>
+          </li>
+          <li>
+            <a href="papers/30.pdf" target="_blank">Flatness-Aware Gradient Descent for Safe Conversational AI</a>
+            <br>
+            <em>Leila Khalatbari, Saeid Hosseini, Hossein Sameti and Pascale Fung</em>
+          </li>
+          <li>
+            <a href="papers/32.pdf" target="_blank">Introducing GenCeption for Multimodal LLM Benchmarking: You May Bypass Annotations</a>
+            <br>
+            <em>Lele Cao, Valentin Buchner, Zineb Senane and Fangkai Yang</em>
+          </li>
+          <li>
+            <a href="papers/33.pdf" target="_blank">Semantic-Preserving Adversarial Example Attack against BERT</a>
+            <br>
+            <em>Chongyang Gao, Kang Gu, Soroush Vosoughi and Shagufta Mehnaz</em>
+          </li>
+          <li>
+            <a href="papers/35.pdf" target="_blank">Sandwich attack: Multi-language Mixture Adaptive Attack on LLMs</a>
+            <br>
+            <em>Bibek Upadhayay and Vahid Behzadan</em>
+          </li>
+          <li>
+            <a href="papers/36.pdf" target="_blank">Masking Latent Gender Knowledge for Debiasing Image Captioning</a>
+            <br>
+            <em>Fan Yang, Shalini Ghosh, Emre Barut, Kechen Qin, Prashan Wanigasekara, Chengwei Su, Weitong Ruan and Rahul Gupta</em>
+          </li>
+          <li>
+            <a href="papers/38.pdf" target="_blank">BELIEVE: Belief-Enhanced Instruction Generation and Augmentation for Zero-Shot Bias Mitigation</a>
+            <br>
+            <em>Lisa Bauer, Ninareh Mehrabi, Palash Goyal, Kai-Wei Chang, Aram Galstyan and Rahul Gupta</em>
+          </li>
+          <li>
+            <a href="papers/44.pdf" target="_blank">Tell Me Why: Explainable Public Health Fact-Checking with Large Language Models</a>
+            <br>
+            <em>Majid Zarharan, Pascal Wullschleger, Babak Behkam Kia, Mohammad Taher Pilehvar and Jennifer Foster</em>
+          </li>
+        </ul>
       </div>
     </div>
-  </section> -->
+    </div>
+  </section>
 
   <section id="people" class="bg-light">
     <div class="container">
       
       <div class="row">
-      <div class="col-lg-8 mx-auto" style="margin-top: -300px;">
+      <div class="col-lg-8 mx-auto">
+        
+      <!-- </div>style="margin-top: -300px;"> -->
         
 
           <h2>Committee</h2>
@@ -482,7 +577,6 @@
   </section>
 
 
-
   <section id="contact" class="bg-light">
     <div class="container">
       <div class="row">
@@ -494,13 +588,30 @@
       
       
                       </p>
-          
-          </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
+
+
+
+  <section id="Sponsor" class="bg-light">
+    <div class="container">
+      <div class="col-lg-8 mx-auto">   
+
+        <!-- <div class="row"> -->
+          <h2>Thank you to our sponsors!</h2>        
+          <div class="sponsor">
+            <div class="sponsor-photo">
+              <img src="sponsors/amazon-logo-1024x683.png">
+      </div>
+    </div>
+    </section>
+
+
+
+
+
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
