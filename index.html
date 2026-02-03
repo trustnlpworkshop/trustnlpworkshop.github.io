@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>TrustNLP</title>
 
   <!-- Bootstrap core CSS -->
@@ -16,462 +13,208 @@
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
 
-<style>
-   table {border-collapse:collapse; table-layout:fixed; width:500px;}
-   table td {border:solid 1px #fab; width:100px; word-wrap:break-word;}
-   </style>
+  <style>
+    /* Global resets */
+    body {font-family: 'Open Sans', sans-serif; line-height: 1.6; color: #333;}
+    a {color: #0066cc; text-decoration: none;}
+    a:hover {text-decoration: underline;}
 
+    /* Hero section */
+    .hero {background-image: url('index.jpg'); background-size: cover; background-position: center; color: #fff; padding: 6rem 1rem; text-align: center;}
+    .hero h1 {font-size: 2.5rem; margin-bottom: .5rem;}
+    .hero p {font-size: 1.1rem; margin-bottom: 1rem;}
+    .hero .lead {font-size: 1.2rem; font-weight: 300;}
+
+    /* Navigation */
+    #mainNav {background: #212529; border-bottom: 1px solid #444;}
+    #mainNav .navbar-brand {color: #fff; font-weight: 600;}
+    #mainNav .nav-item a {color: #ddd; padding: .5rem 1rem; transition: color .2s;}
+    #mainNav .nav-item a:hover {color: #fff;}
+
+    /* Section styling */
+    section {padding: 3rem 0; background-color: #f9f9f9;}
+    section h2 {font-size: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #0066cc; padding-bottom: .5rem;}
+    section h4 {font-size: 1.4rem; margin-top: 1.5rem; color: #0066cc;}
+
+    /* Card grid */
+    .card-grid {display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;}
+    .card {background: #fff; border: 1px solid #e0e0e0; border-radius: .25rem; padding: 1.5rem; max-width: 300px; box-shadow: 0 2px 6px rgba(0,0,0,.1); transition: transform .2s;}
+    .card h5 {font-size: 1.2rem; margin-bottom: .5rem; color: #0066cc;}
+    .card ul {list-style-type: disc; padding-left: 1.5rem;}
+    .card li strong {font-weight: 600;}
+
+    /* Table styling */
+    .table {width: 100%; border-collapse: collapse; margin-top: 1rem;}
+    .table th, .table td {border: 1px solid #ddd; padding: .75rem; text-align: left;}
+    .table th {background-color: #f0f8ff; font-weight: 600;}
+    .table tr:nth-child(even) {background-color: #f8f8f8;}
+
+    /* Footer */
+    footer {background: #212529; color: #fff; padding: 2rem 0; text-align: center;}
+  </style>
 </head>
-
 <body id="page-top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">TrustNLP @ ACL 2026</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#call-for-papers">Call for Papers</a>
-        </li>          
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a> 
-        </li>          
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#papers">Papers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#people">People</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-        </li>
-      </ul>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">TrustNLP @ ACL 2026</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#call-for-papers">Call for Papers</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#people">People</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <header class=" text-white" style="background-image: url('index.jpg')">
-    <div class="container text-center">
+  <!-- Hero Section -->
+  <header class="hero text-white" id="hero">
+    <div class="container">
       <h1>TrustNLP: Sixth Workshop on Trustworthy Natural Language Processing</h1>
-      <p class="desc">Colocated with the <a style="color:white" href="https://2026.aclweb.org/"> 2026 Annual Conference of the Association for Computational Linguistics (ACL 2026)</a> </p>
-            <p class="desc">San Diego, California, United States </p>
-
-	    <p class="lead"></p>
+      <p class="lead">Colocated with the <a href="https://2026.aclweb.org/" style="color:#fff;">2026 Annual Conference of the Association for Computational Linguistics (ACL 2026)</a></p>
+      <p>San Diego, California, United States</p>
     </div>
   </header>
 
+  <!-- About Section -->
   <section id="about" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About </h2>
-          <p class="lead">With the rapid advances in AI, empowered by large language models (LLMs) and natural language processing (NLP) techniques, there is an increasing integration of AI systems that directly interact with users and facilitate our daily tasks. In particular, the recent development of agentic models allows users to communicate directly with AI for complex tasks such as coding, web surfing, information seeking, and deep research. These models integrate NLP techniques with computer vision, systems engineering, and other social and physical sciences, expanding the boundaries of what AI systems can accomplish and making NLP systems omnipresent in various aspects of our everyday life. This makes the development of reliable, responsible, ethical, and safe AI increasingly important.
+          <h2>About</h2>
+          <p class="lead">With the rapid advances in AI, empowered by large language models (LLMs) and natural language processing (NLP) techniques, there is an increasing integration of AI systems that directly interact with users and facilitate our daily tasks. In particular, the recent development of agentic models allows users to communicate directly with AI for complex tasks such as coding, web surfing, information seeking, and deep research. These models integrate NLP techniques with computer vision, systems engineering, and other social and physical sciences, expanding the boundaries of what AI systems can accomplish and making NLP systems omnipresent in various aspects of our everyday life. This makes the development of reliable, responsible, ethical, and safe AI increasingly important.</p>
 
-          <p class="lead">This year, we are excited to host our TrustNLP workshop at ACL 2026, inviting participants and papers that focus on developing models that are explainable, fair, privacy-preserving, causal, and robust. In particular, we have secured sponsorship from major companies in the field, including Meta, Capital One, and Amazon. We will use the funding to promote diversity, participation, and mentoring, furthering our mission.
-
-	</div>
+          <p class="lead">This year, we are excited to host our TrustNLP workshop at ACL 2026, inviting participants and papers that focus on developing models that are explainable, fair, privacy‑preserving, causal, and robust. In particular, we have secured sponsorship from major companies in the field, including Meta, Capital One, and Amazon. We will use the funding to promote diversity, participation, and mentoring, furthering our mission.</p>
+        </div>
       </div>
     </div>
   </section>
 
-<!--
-
-<section id="program" class="bg-light">
+  <!-- Call for Papers Section -->
+  <section id="call-for-papers" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Program</h2>
-          <p class="lead">The program is below in Mountain Daylight Time Time</p>
-            <p>&nbsp;</p>
+          <h2>Call for Papers</h2>
 
+          <!-- Topics Card -->
+          <div class="card-grid mt-4">
+            <div class="card">
+              <h5>Topics</h5>
+              <p>We invite papers that focus on different aspects of <em>safe</em> and <em>trustworthy</em> language modeling. Topics of interest include (but are not limited to):</p>
+              <ul>
+                <li>Privacy‑Preserving Model Training</li>
+                <li>Unlearning and Model Editing</li>
+                <li>Fairness and Bias: Evaluation and Treatments</li>
+                <li>Model Explainability and Interpretability</li>
+                <li>Culturally‑Aware and Inclusive LLMs</li>
+                <li>Accountability, Safety, and Robustness</li>
+                <li>Red‑teaming, backdoor or adversarial attacks and defenses for LLM safety</li>
+                <li>Ethics, Social responsibility, and Dual‑use</li>
+                <li>Causal Inference and Fair ML</li>
+                <li>Secure, Faithful, Safe, and Trustworthy Data/Language Generation</li>
+                <li>Hallucination and Unqualified Suggestion</li>
+                <li>Toxic Language Detection and Mitigation</li>
+                <li>Industry applications of Trustworthy NLP</li>
+              </ul>
+              <p>We welcome contributions that also draw upon interdisciplinary knowledge to advance Trustworthy NLP. This may include working with, synthesizing, or incorporating knowledge across expertise, sociopolitical systems, cultures, or norms.</p>
+            </div>
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><span style="font-weight: 400;">Time</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Event</span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">9:00-9:10 am</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Opening Address</span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">9:10-9:50 am</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Keynote 1: Mor Geva </span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">9:50-10:30 am</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Keynote 2: Eric Wallace </span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">10:30-11:00 am</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Coffee Break</span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">11:00-11:40 pm</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Keynote 3: Niloofar Mireshghallah  </span></p>
-</td>
-</tr>
-	<tr>
-<td>
-<p><span style="font-weight: 400;">11:40-12:30 pm</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Trusted AI Challenge -- securely advance LLMs that code (Prasoon Goyal) </span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">12:30-1:30 pm</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Lunch break</span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">1:30-3:00 pm</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;"> In-person + Virtual Poster Session </span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;"> 2:45 - 3:30 pm</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;"> Industrial-Academic Panels (Hybrid) (Moderator: Aram Galstyan) </span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">3:00-4:00 pm </span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Coffee Break</span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">4:00-5:25 pm</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Best and Spotlight Paper Presentations</span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-weight: 400;">4:25 -5:30 pm</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Closing Remarks</span></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div></div>
-  </section>
+            <!-- Dates Card -->
+            <div class="card">
+              <h5>Important Dates</h5>
+              <ul>
+                <li><strong><ins>March 5, 2026:</ins></strong> Workshop Paper Due Date (Direct Submission via OpenReview)</li>
+                <li><strong>April 10, 2025:</strong> Workshop Paper Due Date (Fast‑Track)</li>
+                <li><strong>April 10, 2025:</strong> Deadline for relevant ACL Findings to submit non‑archival</li>
+                <li><strong>April 28, 2026:</strong> Notification of Acceptance</li>
+                <li><strong>May 12, 2025:</strong> Camera‑ready Papers Due</li>
+                <li><strong>June 4, 2025:</strong> Pre‑recorded video due</li>
+              </ul>
+            </div>
 
---> 
+            <!-- Submission Card -->
+            <div class="card">
+              <h5>Submission Information</h5>
+              <p>All submissions undergo double‑blind peer review (with author names and affiliations removed) by the program committee, and they will be assessed based on their relevance to the workshop themes.</p>
+              <p>All submissions go through the OpenReview platform. To submit, use <a href="https://openreview.net/group?id=aclweb.org/ACL/2026/Workshop/TrustNLP">this submission link</a>.</p>
+              <p>Submitted manuscripts must be 8 pages long for full papers and 4 pages long for short papers. Please follow <a href="https://2026.aclweb.org/calls/main_conference_papers/">ACL submission policies</a>. Both full and short papers can have unlimited pages for references and appendices. Please note that at least one of the authors of each accepted paper must register for the workshop and present the paper.</p>
+              <p>Template files can be found <a href="https://aclrollingreview.org/cfp#long-papers">here</a>.</p>
+              <p>We also ask authors to include a limitation section and broader impact statement, following guidelines from the main conference.</p>
+            </div>
 
-	
-<section id="call-for-papers" class="bg-light">
-  <div class="container">
-    <div class="row">
-      <!-- <div class="col-lg-8 mx-auto" tyle="margin-top: -150px;"> -->
-        <div class="col-lg-8 mx-auto">
+            <!-- Fast‑Track Card -->
+            <div class="card">
+              <h5>Fast‑Track Submission</h5>
+              <p>If your paper has been reviewed by ACL, EMNLP, EACL, or ARR and the average rating is higher than 2.75 (either average soundness or excitement score), the paper is qualified to be submitted on the fast track. In the appendix, please include the reviews and a short statement discussing what parts of the paper have been revised.</p>
+            </div>
 
-        <h2>Call for Papers</h2>
-        <h4>Topics</h4>
-        <p>We invite papers which focus on different aspects of <em>safe</em> and <em>trustworthy</em> language modeling. Topics of interest include (but are not limited to): 
-        <ul style="padding-left: 20px;">
+            <!-- Non‑Archival Card -->
+            <div class="card">
+              <h5>Non‑Archival Option</h5>
+              <p>ACL workshops are traditionally archival. To allow dual submission of work, we are also including a non‑archival track. If accepted, these submissions will still participate and present their work in the workshop. A reference to the paper will be hosted on the workshop website (if desired), but will not be included in the official proceedings. Please submit through OpenReview but indicate that this is a cross‑submission at the bottom of the submission form. You can also skip this step and inform us of your non‑archival preference after the reviews. Papers accepted to the Findings of ACL 2026 may also submit non‑archival to the workshop.</p>
+            </div>
 
-<li>Privacy-Preserving Model Training</li>
-<li> Unlearning and Model Editing</li>
-<li> Fairness and Bias: Evaluation and Treatments </li>
-<li>  Model Explainability and Interpretability </li>
-<li>Culturally-Aware and Inclusive LLMs</li>
-<li> Accountability, Safety, and Robustness </li>
-<li> Red-teaming, backdoor or adversarial attacks and defenses for LLM safety</li>
-<li> Ethics, Social responsibility, and Dual-use </li>
-<li> Causal Inference and Fair ML </li>
-<li> Secure, Faithful, Safe, and Trustworthy Data/Language Generation </li>
-<li> Hallucination and Unqualified Suggestion </li>
-<li> Toxic Language Detection and Mitigation </li>
-<li> Industry applications of Trustworthy NLP </li>
-        </ul>
-        
-        We welcome contributions that also draw upon interdisciplinary knowledge to advance Trustworthy NLP. This may include working with, synthesizing, or incorporating knowledge across expertise, sociopolitical systems, cultures, or norms.        
-      </div>
-    </div>
-  </div>
+            <!-- Policies Card -->
+            <div class="card">
+              <h5>Policies</h5>
+              <p>Accepted and under‑review papers are allowed to be submitted to the workshop but will not be included in the proceedings.</p>
+              <p>No anonymity period will be required for papers submitted to the workshop, per the latest updates to the ACL anonymity policy. However, submissions must still remain fully anonymized.</p>
+            </div>
 
-  <div class="container", style="margin-top: 40px;">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h4>Important Dates</h4>
-        <ul style="padding-left: 20px;">
-
-
-          <li><strong><ins>March 5</ins>, 2026:</strong> Workshop Paper Due Date (Direct Submission via OpenReview)</li>
-         <li><strong>April 10, 2025</strong> Workshop Paper Due Date (Fast-Track)</li>
-         <li><strong>April 10, 2025: </strong> Deadline for relevant ACL Findings to submit non-archival </li>
-         <li><strong>April 28, 2026:</strong> Notification of Acceptance </li>
-          <li><strong>May 12, 2025:</strong> Camera-ready Papers Due</li>
-	<li><strong>June 4, 2025:</strong> Pre-recorded video due</li>
-				<li><strong>July 4, 2025:</strong> Workshop Date</li>
-      </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="container", style="margin-top: 20px;">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-          <div>
-              <h4>Submission Information</h4>
-              
-              <div>
-                <p>
-                  All submissions undergo double-blind peer review (with author names and affiliations removed) by the
-                  program committee, and they will be assessed based on their relevance to the workshop themes.
-              </p>
-
-                  <p>
-                      All submissions go through the OpenReview. To submit, use <a href="https://openreview.net/group?id=aclweb.org/ACL/2026/Workshop/TrustNLP"> submission link</a>.
-                  </p>
-                  
-                  <p>
-                      Submitted manuscripts must be 8 pages long for full papers and 4 pages long for short papers. Please
-                      follow <a href="https://2026.aclweb.org/calls/main_conference_papers/">ACL submission
-                          policies</a>. Both full and short papers can have unlimited pages for references and appendices.
-                      Please note that at least one of the authors of each accepted paper must register for the workshop and
-                      present the paper.
-                      Template files can be found <a href="https://aclrollingreview.org/cfp#long-papers">here</a>.
-                  </p>
-                  <p>
-                      We also ask authors to include a limitation section and broader impact statement, following guidelines
-                      from the main conference.
-                  </p>
-              </div> 
-          </div>
-  
-          <div style="margin-top: 10px;">
-              <h5>Fast-Track Submission</h5>
-              <p>
-                  If your paper has been reviewed by ACL, EMNLP, EACL, or ARR and the average rating is higher than 2.75
-                  (either average soundness or excitement score), The paper is qualified to be submitted on the fast track.
-                  In the appendix, please include the reviews and a short statement discussing what parts of the paper have
-                  been revised.
-              </p>
-          </div>
-  
-          <div style="margin-top: 10px;">
-              <h5>Non-Archival Option</h5>
-              <p>
-                  ACL workshops are traditionally archival. To allow dual submission of work, we are also including a
-                  non-archival track. If accepted, these submissions will still participate and present their work in the
-                  workshop. A reference to the paper will be hosted on the workshop website (if desired), but will not be
-                  included in the official proceedings. Please submit through OpenReview but indicate that this is a cross
-                  submission at the bottom of the submission form. You can also skip this step and inform us of your
-                  non-archival preference after the reviews. Papers accepted to the Findings of ACL 2026 may also submit non-archival to the workshop.
-              </p>
-          </div>
-          </div>
-  
+            <!-- Participant Info Card 
+            <div class="card">
+              <h5>Info for Participants</h5>
+              <p>To attend the workshop, please register through <a href="https://2025.naacl.org/">NAACL 2025</a>.</p>
+            </div> -->
           </div>
         </div>
-
-  <div class="container", style="margin-top: 20px;">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-          <div>
-              <h4>Policies</h4>
-
-              <p>
-                  Accepted and under-review papers are allowed to be submitted to the workshop but will not be included in the
-                  proceedings.
-              </p>
-          </div>
-  
-              <p>
-                  No anonymity period will be required for papers submitted to the workshop, per the latest updates to the
-                  ACL anonymity policy. However, submissions must still remain fully anonymized.
-              </p>
-	    <div>
-	         <h4>Info for Participants </h4>
-	    </div>
-	      To attend the workshop, please register through <a href="https://2025.naacl.org/"> NAACL 2025 </a>.    
-  
       </div>
-   </div>
-  </div>
+    </div>
   </section>
-  
-<!--
-<section id="speakers" class="bg-light">
+
+  <!-- People / Committee Section -->
+  <section id="people" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Speakers</h2>
-            </br>
-            <img src="speakers/Mor.jpg" class="icons">
-            <strong> <p style="text-align: center; font-size: 20px"> Mor Geva, Assistant Professor (Senior Lecturer) at Tel Aviv University and a Research Scientist at Google </p></strong>
-            <p>Mor Geva is an Assistant Professor (Senior Lecturer) at the School of Computer Science and AI at Tel Aviv University and a Research Scientist at Google. Her research focuses on understanding the inner workings of large language models, to increase their transparency and efficiency, control their operation, and improve their reasoning abilities. Mor completed a Ph.D. in Computer Science at Tel Aviv University and was a postdoctoral researcher at Google DeepMind and the Allen Institute for AI. She was nominated as an MIT Rising Star in EECS (2021) and received multiple awards, including Intel's Rising Star Faculty Award (2024), an EMNLP Best Paper Award (2024), an EACL Outstanding Paper Award (2023), and the Dan David Prize for Graduate Students in the field of AI (2020).</p>
-		<p> Talk title: Into the Gap Between What Language Models Say and What They Know </p>
-		<p> Abstract: Alignment efforts to make large language models (LLMs) trustworthy and safe are often easy to bypass, as it is possible to steer models away from their safe behavior to generate biased, harmful, or incorrect information. This raises the question of what information LLMs capture in their hidden representations versus in the text they generate. In this talk, we will tackle this question from a mechanistic interpretability point of view. We will show that it is possible to estimate how knowledgeable a model is about a given subject only from its hidden representations, using a simple and lightweight probe, called KEEN. While KEEN correlates with model factuality, question-answering performance, and hedging behavior, it reveals a gap between the model’s inner knowledge and the knowledge it expresses in its outputs. Next, we will consider the problem of unlearning and leverage “parametric knowledge traces” for evaluation. We will see that while existing unlearning methods succeed at standard behavioral evaluations, they fail to erase the concept from the model parameters and instead suppress its generation during inference, leaving the model vulnerable to adversarial attacks. </p> 
-	    
-            <img src="speakers/Eric.jpg" class="icons">
-            <strong> <p  style="text-align: center;">Eric Wallace, Research Scientist at OpenAI</p> </strong>
-            <p> Eric Wallace is a research scientist at OpenAI, where he studies the theory and practice of building trustworthy, secure, and private machine learning models. He did his PhD work at UC Berkeley, where he was supported by the Apple Scholars in AI Fellowship and had his research recognized by various awards (EMNLP, PETS). Prior to OpenAI, Eric interned at Google Brain, AI2, and FAIR.</p>
-	  	<p> Talk title: Making “GPT-Next” Robust</p>
-		<p> Abstract: I’ll talk about three recent directions from OpenAI to make our next-generation of models more responsible, trustworthy, and secure. First, I will do a deep dive into chain-of-thought reasoning models and how we can align them with human preferences using deliberative alignment. Next, I will discuss how to mitigate prompt injections and jailbreaks by teaching LLMs to follow instructions in a hierarchical manner. Finally, I will discuss the tensions that exist between open model access and system security, whereby providing access to LM output probabilities can allow adversaries to reveal the hidden size of black-box models.</p>
-            </br>
-            <img src="speakers/niloofar.jpeg" class="icons">
-            <strong> <p  style="text-align: center;">Niloofar Mireshghallah, Post-doctoral Scholar at University of Washington</p> </strong>
-            <p>Niloofar Mireshghallah is a post-doctoral scholar at the Paul G. Allen Center for Computer Science & Engineering at University of Washington. She received her Ph.D. from the CSE department of UC San Diego in 2023. Her research interests are privacy in machine learning, natural language processing and generative AI and law. She is a recipient of the National Center for Women & IT Collegiate award in 2020, a finalist of the Qualcomm Innovation Fellowship in 2021 and a recipient of the 2022 Rising stars in Adversarial ML award and Rising Stars in EECS.</p>
-            <p> A False Sense of Privacy: Semantic Leakage, Non-literal Copying, and Other Privacy Concerns in LLMs </p>
-		<p> Abstract: The reproduction of training data by large language models has significant privacy and copyright implications, with concerns ranging from exposing medical records to violating intellectual property rights. While current evaluations and mitigation methods focus primarily on verbatim copying and explicit data leakage, we demonstrate that these provide a false sense of safety at a surface level. In this talk, we show how building evaluations and red-teaming efforts solely around verbatim reproduction can be misleading - surface level sanitization, while removing direct identifiers, still poses risks of re-identification through inference, and although aligned models show fewer direct regurgitations, they still reproduce non-literal content by generating series of events that are substantially similar to original works. Looking ahead, our findings highlight the need to shift toward more dynamic benchmarks that can capture these nuanced forms of information leakage, while developing protection methods that address both literal and semantic reproduction of content.</p>
-	</div>
-      </div>
-    </div>
-  </section> 
-
-
---!>
-
-
-
- 
-
-  <section id="people" class="bg-light">
-    <div class="container">
-      
-      <div class="row">
-      <div class="col-lg-8 mx-auto">
-        
-      <!-- </div>style="margin-top: -300px;"> -->
-        
-
           <h2>Committee</h2>
           <p class="lead">Organizers</p>
           <ul>
-            <li><a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a> - UCLA, Amazon Nova RAI</li> 
-	    <li><a href="https://ninarehm.github.io/">Ninareh Mehrabi</a> - Meta</li>
-	    <li><a href="https://satyapriyakrishna.com">Satyapriya Krishna </a> Amazon Nova RAI </li>
-            <li><a href="https://anubrata.github.io/">Anubrata Das</a> -University of Texas at Austin</li> 
+            <li><a href="http://web.cs.ucla.edu/~kwchang/">Kai‑Wei Chang</a> – UCLA, Amazon Nova RAI</li>
+            <li><a href="https://ninarehm.github.io/">Ninareh Mehrabi</a> – Meta</li>
+            <li><a href="https://satyapriyakrishna.com">Satyapriya Krishna</a> – Amazon Nova RAI</li>
+            <li><a href="https://anubrata.github.io/">Anubrata Das</a> – University of Texas at Austin</li>
+            <li><a href="https://jwaladhamala.com/">Jwala Dhamala</a> – Amazon Nova RAI</li>
+            <li><a href="http://ycao95.umiacs.io/">Yang Trista Cao</a> – Amazon Nova RAI</li>
+            <li><a href="https://www.linkedin.com/in/tskumarage">Tharindu Kumarage</a> – Amazon Nova RAI</li>
+            <li><a href="https://sail.usc.edu/~akramakr/">Anil Ramakrishna</a> – Meta</li>
+            <li><a href="https://christos-c.com/">Christos Christodoulopoulos</a> – Information Commissioner's Office</li>
+            <li><a href="https://elainew728.github.io/">Yixin Wan</a> – UCLA</li>
+            <li><a href="https://www.isi.edu/people/galstyan/about">Aram Galstyan</a> – USC, Amazon AGI</li>
+            <li><a href="https://www.amazon.science/author/anoop-kumar">Anoop Kumar</a> – Capital One</li>
+            <li><a href="https://guptarah.github.io/">Rahul Gupta</a> – Amazon Nova RAI</li>
+          </ul>
 
-            <li><a href="https://jwaladhamala.com/">Jwala Dhamala</a> - Amazon Nova RAI</li>
-            <li><a href="http://ycao95.umiacs.io/">Yang Trista Cao</a> - Amazon Nova RAI </li>            
-	    <li><a href="https://www.linkedin.com/in/tskumarage">Tharindu Kumarage </a> Amazon Nova RAI </li>
-            <li><a href="https://sail.usc.edu/~akramakr/">Anil Ramakrishna</a> - Meta</li>
-	    <li><a href="https://christos-c.com/">Christos Christodoulopoulos</a> - Information Commissioner's Office </li>
-	    <li><a href="https://https://elainew728.github.io/">Yixin Wan</a> - UCLA</li> 
-            <li><a href="https://www.isi.edu/people/galstyan/about">Aram Galstyan</a> - USC, Amazon AGI</li>
-            <li><a href="https://www.amazon.science/author/anoop-kumar">Anoop Kumar</a> - Capital One</li>
-            <li><a href="https://guptarah.github.io/">Rahul Gupta</a> - Amazon Nova RAI</li>
-          </ul>
-        
-          
-          <p class="lead">Program Committee</p>
-          <ul>
-<!--             <li>Saied Alshahrani</li>
-            <li>Connor Baumler</li>
-            <li>Gagan Bhatia</li>
-            <li>Keith Burghardt</li>
-            <li>Yang Trista Cao</li>
-            <li>Javier Carnerero Cano</li>
-            <li>Canyu Chen</li>
-            <li>Xinyue Chen</li>
-            <li>Jwala Dhamala</li>
-            <li>Árdís Elíasdóttir</li>
-            <li>Aram Galstyan</li>
-            <li>Usman Gohar</li>
-            <li>Zihao He</li>
-            <li>Pengfei He</li>
-            <li>Qian Hu</li>
-            <li>Satyapriya Krishna</li>
-            <li>Jooyoung Lee</li>
-            <li>Yanan Long</li>
-            <li>Subho Majumdar</li>
-            <li>Ninareh Mehrabi</li>
-            <li>Sahil Mishra</li>
-            <li>Isar Nejadgholi</li>
-            <li>Huy Nghiem</li>
-            <li>Anaelia Ovalle</li>
-            <li>Jieyu Zhao</li>
-            <li>Aishwarya Padmakumar</li>
-            <li>Kartik Perisetla</li>
-            <li>Salman Rahman</li>
-            <li>Chahat Raj</li>
-            <li>Anthony Rios</li>
-            <li>Patricia Thaine</li>
-            <li>Simon Yu</li>
-            <li>Xinlin Zhuang</li>
-            <li>Chupeng Zhang</li>
-            <li>Chenyang Zhu</li>
-            <li>Christina Chance</li>            
-            <li>Nishant Balepur</li>                        
-            <li>Elaine Yixin Wan</li>            
-            <li>Xinchen Yang</li>                         -->
-          </ul>
-          
         </div>
       </div>
     </div>
 
-    <div class="container", style="margin-top: 50px;">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-                <h5>Interested in reviewing for TrustNLP?</h5>
-  
-                <p>
-                  If you are interested in reviewing submissions, please fill out this <a href="https://forms.gle/AHf3HvWMF3FVDh9q8">form</a>.
-
-
-                </p>
-    
+          <h5>Interested in reviewing for TrustNLP?</h5>
+          <p>If you are interested in reviewing submissions, please fill out this <a href="https://forms.gle/AHf3HvWMF3FVDh9q8">form</a>.</p>
         </div>
+      </div>
     </div>
-    </div>
-
   </section>
-
-
 
 
   <section id="Sponsor" class="bg-light">
@@ -484,6 +227,11 @@
 		  	        <div class="row">
         <div class="col-lg-4 mx-auto">
             <div class="sponsor-photo">
+              <img src="sponsors/meta.png">
+	    </div>
+	</div>
+        <div class="col-lg-4 mx-auto">
+            <div class="sponsor-photo">
               <img src="sponsors/amazon-logo-1024x683.png">
 	    </div>
 	</div>
@@ -492,42 +240,28 @@
 		<img src="sponsors/captital_one.png">
 	 </div>
       </div>
-						        <div class="col-lg-4 mx-auto">
-            <div class="sponsor-photo">
-              <img src="sponsors/meta.svg">
-	    </div>
-								</div>
 				</div>
     </div>
     </section>
 
-	      
+
+  <!-- Contact Section -->
   <section id="contact" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-                      <h2>Questions?</h2>
-        
-                      <p>
-                        Please contact us at <a href="mailto:trustnlpworkshoporganizers@gmail.com">trustnlpworkshoporganizers@gmail.com</a>.
-      
-      
-                      </p>
-          </div>
+          <h2>Questions?</h2>
+          <p>Please contact us at <a href="mailto:trustnlpworkshoporganizers@gmail.com">trustnlpworkshoporganizers@gmail.com</a>.</p>
         </div>
       </div>
+    </div>
   </section>
-
-
-
-
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; TrustNLP 2024</p>
+      <p class="m-0 text-center text-white">Copyright &copy; TrustNLP </p>
     </div>
-    <!-- /.container -->
   </footer>
 
   <!-- Bootstrap core JavaScript -->
@@ -539,80 +273,6 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-
 </body>
-
 </html>
-
-
-            <!-- <div>
-
-	<ul>
-
-<li>Griffin Adams, Columbia University </li>
-<li>Stefan Arnold, FAU Erlangen-Nurnberg</li>
-<li>Connor Baumler, University of Maryland</li>
-<li>Keith Burghardt, USC Information Sciences Institute</li>
-<li>Yang Trista Cao, University of Maryland</li>
-<li>Jwala Dhamala, Amazon Alexa AI-NLU</li>
-<li>Jacob Eisenstein, Google</li>
-<li>Katja Filippova, Google</li>
-<li>Aram Galstyan, USC Information Sciences Institute</li>
-<li>Umang Gupta, University of Southern California</li>
-<li>Devamanyu Hazarika, Amazon</li>
-<li>Zihao He, University of Southern California</li>
-<li>William Held, Georgia Tech</li>
-<li>Qian Hu, Amazon.com</li>
-<li>Fatemah Husain, Kuwait University</li>
-<li>Anoop Kumar, Amazon</li>
-<li>Sasha Luccioni, Hugging Face</li>
-<li>Pranav Narayanan Venkit, Pennsylvania State University</li>
-<li>Isar Nejadgholi, National Research Council Canada</li>
-<li>Aishwarya Padmakumar, Amazon</li>
-<li>Ashwinee Panda, Princeton University</li>
-<li>Anirudh Raju, Amazon, Alexa</li>
-<li>Anthony Rios, University of Texas at San Antonio</li>
-<li>Robik Shrestha, RIT</li>
-<li>Anna Sotnikova, University of Maryland</li>
-<li>Arjun Subramonian, University of California, Los Angeles</li>
-<li>Jialu Wang, University of California, Santa Cruz</li>
-<li>Chhavi Yadav, UCSD</li>
-<li>Kiyoon Yoo, Seoul National University</li>
-
-	</ul>  	
-		</div> -->
-
-  
-
-        <!-- </div>
-      </div>
-    </div> -->
-  <!-- </div> -->
-
-
-  <!-- <section id="speakers" class="bg-light">
-    <div class="container" style="display: none">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Speakers</h2>
-            </br>
-            <img src="Diyi_Yang.jpeg" class="icons">
-            <strong> <p style="text-align: center; font-size: 20px"> Diyi Yang, Assistant Professor, School of Interactive Computing, Georgia Tech </p></strong>
-            <p  style="text-align: center;">Diyi Yang is an assistant professor in the School of Interactive Computing at Georgia Tech. Diyi has broad interests in NLP and Computational Social Science, including dialogue summarization, limited data learning,  hate speech and bias,  as well as responsible NLP for mental health. Her work has received multiple awards (or nominations) at EMNLP, ICWSM, SIGCHI, and CSCW. She is a Microsoft Research Faculty Fellow, a Forbes 30 under 30 in Science, an IEEE “AI 10 to Watch”, a recipient of the Intel Rising Star Faculty Award, the Samsung AI Researcher of the Year and the NSF CAREER Award.</p>
-
-            </br>
-            <img src="sbmisi.jpeg" class="icons">
-            <strong> <p  style="text-align: center;">Subho Majumdar, Senior Scientist, Splunk</p> </strong>
-            <p style="text-align: center;"> Subho is a senior scientist in the Applied ML Research team of Splunk. Before recently joining Splunk, he spent 3 years in AT&T Data Science and AI Research (erstwhile part of AT&T Bell Labs). Throughout his career, he has worked on data-driven solutions that pushed the boundaries for a variety of challenging and cross-product problems. His current focus is on trustworthy machine learning in the wild: not only proposing novel solutions to technical problems that ensure qualities such as fairness, transparency, privacy, and robustness, but also implementing them in real-world use cases.</p>
-
-            </br>
-            <img src="Fei_Wang.jpeg" class="icons">
-            <strong> <p  style="text-align: center;">Fei Wang, Associate Professor in Division of Health Informatics, Cornell University</p> </strong>
-            <p style="text-align: center;">Fei Wang is an Associate Professor in Division of Health Informatics, Department of Population Health Sciences, Weill Cornell Medicine, Cornell University. His major research interest is data mining, machine learning and their applications in health data science. He has published more than 250 papers on the top venues of related areas such as ICML, KDD, NIPS, CVPR, AAAI, IJCAI, JAMA Internal Medicine, Annals of Internal Medicine, Lancet Digital Health, etc. His papers have received over 19,000 citations so far with an H-index 67. His (or his students’) papers have won 8 best paper (or nomination) awards at top international conferences on data mining and medical informatics. His team won the championship of the NIPS/Kaggle Challenge on Classification of Clinically Actionable Genetic Mutations in 2017 and Parkinson's Progression Markers' Initiative data challenge organized by Michael J. Fox Foundation in 2016. Dr. Wang is the recipient of the NSF CAREER Award in 2018, as well as the inaugural research leadership award in IEEE International Conference on Health Informatics (ICHI) 2019. Dr. Wang’s Research has been supported by NSF, NIH, ONR, PCORI, MJFF, AHA, Amazon, etc. Dr. Wang is the past chair of the Knowledge Discovery and Data Mining working group in American Medical Informatics Association (AMIA). Dr. Wang is a fellow of AMIA and a Distinguished Member of ACM.</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-
 
