@@ -49,6 +49,15 @@
     .table th {background-color: #f0f8ff; font-weight: 600;}
     .table tr:nth-child(even) {background-color: #f8f8f8;}
 
+    /* Program schedule */
+    .program-schedule {border: 1px solid #e0e0e0; border-radius: .25rem; overflow: hidden; margin-top: 1rem;}
+    .prog-slot-header {background: #e8f0fe; color: #1a3a6b; font-weight: 600; font-size: .85rem; padding: .4rem .9rem; border-top: 1px solid #d0daf5; letter-spacing: .03em;}
+    .prog-slot-header:first-child {border-top: none;}
+    .prog-slot-body {padding: .5rem .9rem .7rem; background: #fff; font-size: .92rem;}
+    .prog-paper-list {list-style: none; padding: 0; margin: .5rem 0 0;}
+    .prog-paper-list li {padding: .35rem 0; border-top: 1px solid #f0f0f0; line-height: 1.4;}
+    .prog-paper-list li:first-child {border-top: none;}
+
     /* Footer */
     footer {background: #212529; color: #fff; padding: 2rem 0; text-align: center;}
   </style>
@@ -154,73 +163,77 @@
           <h2>Program</h2>
           <h4>Saturday, July 4, 2026</h4>
 
-          <table class="table">
-            <thead>
-              <tr><th style="width:180px">Time</th><th>Event</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>09:00 – 09:05</td><td><strong>Opening Remarks</strong></td></tr>
-              <tr><td>09:05 – 09:50</td><td><strong>Keynote 1</strong> – Michael Johnston</td></tr>
-              <tr>
-                <td>09:50 – 10:30</td>
-                <td>
-                  <strong>Poster Session</strong> (continues during the break)
-                  <ul class="mt-2" style="padding-left:1.2rem; font-size:.9rem;">
-                    <li>Evaluating Cross-Lingual Behavior and Consistency of Multimodal Large Language Models<br><em>Hao Wang, Pinzhi Huang and Daisuke Kawahara</em></li>
-                    <li>Responsible Federated LLMs via Safety Filtering and Constitutional AI<br><em>Eunchung Noh and Jeonghun Baek</em></li>
-                    <li>Uncertainty-Aware Proxy Attribute Reasoning for Reliable Media Bias Detection<br><em>Chin-Po Chen, Jeng-Lin Li and Ming-Ching Chang</em></li>
-                    <li>Quantifying LLM Safety Degradation Under Repeated Attacks Using Survival Analysis<br><em>Zvi Topol</em></li>
-                    <li>ChatbotManip: a Dataset to Facilitate Evaluation and Oversight of Manipulative Chatbot Behaviour<br><em>Jack Luigi Henry Contro, Simrat Deol, Martim Brandao and Yulan He</em></li>
-                    <li>Controllable Pareto Trade-off between Fairness and Accuracy<br><em>Yongkang Du, Jieyu Zhao, Yijun Yang and Tianyi Zhou</em></li>
-                    <li>What are They Thinking? Delineation, Probing, and Tracking of Concepts in LLMs<br><em>Mohamed Abdelwahab, Michelle Yu Collins, Sihan Chen, Yi Cheng Zhao, Zafarullah Mahmood, Jiading Zhu, Soliman Ali and Jonathan Rose</em></li>
-                    <li>Hair-Trigger Alignment: Black-Box Evaluation Cannot Guarantee Post-Update Alignment<br><em>Yavuz Faruk Bakman, Duygu Nur Yaldiz, Salman Avestimehr and Sai Praneeth Karimireddy</em></li>
-                    <li>Teaching People LLM's Errors and Getting it Right<br><em>Nathan Stringham, Fateme Hashemi Chaleshtori, Xinyuan Yan, Zhichao Xu, Bei Wang and Ana Marasovic</em></li>
-                    <li>Linear Probes Detect Task Format, Not Reasoning Mode in Language Model Hidden States<br><em>Subramanyam Sahoo, Vinija Jain, Aman Chadha and Divya Chaudhary</em></li>
-                    <li>KoLegalQA: A Korean Legal QA Dataset for Trustworthy and Explanation-Grounded Legal AI<br><em>Yongtae Lee, Surin Lee, Sumin Kim, S M Wahidur Rahman and Heung-No Lee</em></li>
-                    <li>On the Non-Identifiability of Steering Vectors in Large Language Models<br><em>Sohan Venkatesh and Ashish Mahendran Kurapath</em></li>
-                    <li>Authorization-First Retrieval: Enforcing Least Privilege in Multi-Agent RAG Systems<br><em>Rohith Namboothiri</em></li>
-                    <li>PII Jailbreaking in LLMs via Activation Steering Reveals Personal Information Leakage<br><em>Krishna Kanth Nakka, Xue Jiang, Dmitrii Usynin and Xuebing Zhou</em></li>
-                    <li>Coercion Suppression Increases Preference Hallucinations via a Deceptive Bypass in K-Level Negotiation Agents<br><em>Jihye Kim</em></li>
-                    <li>Purdah and Patriarchy: Evaluating and Mitigating South Asian Biases in Open-Ended Multilingual LLM Generations<br><em>Mamnuya Rinki, Chahat Raj, Anjishnu Mukherjee and Ziwei Zhu</em></li>
-                    <li>Ghost Context: Measuring Cross-Context Interference in Long-Context Language Models<br><em>Rohith Namboothiri</em></li>
-                    <li>Understanding the Effects of Safety Unalignment on Reasoning- and Instruction-Tuned Large Language Models<br><em>John Timothy Halloran</em></li>
-                    <li>ReacTOD: Bounded Neuro-Symbolic Agentic NLU for Zero-Shot Dialogue State Tracking<br><em>Yanjun Lin, Zimo Xiao, Kartik Natarajan, Mahesh Sankaranarayanan, Niraj Nawanit, Rakshit Parashar, Austin Zhang, Karthik Konaraddi, Rishita Mote and Wei Niu</em></li>
-                    <li>Geometric Deviation as an Unsupervised Pre-Generation Reliability Signal: Probing LLM Representations for Answerability<br><em>Yucheng Du</em></li>
-                    <li>Re-Mask and Redirect: Exploiting Denoising Irreversibility in Diffusion Language Models<br><em>Arth Singh</em></li>
-                    <li>Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection<br><em>Yusser Al Ghussin, Daniil Gurgurov, Tanja Baeumel, Josef Van Genabith, Patrick Schramowski and Simon Ostermann</em></li>
-                    <li>CARE: A Conformal Safety Layer for Medical Summarization<br><em>Suhana Bedi, Bridget Lin, Anson Zhou, Jenelle A Jindal, Chloe O'Connell Stanwyck, Sanmi Koyejo and Nigam Shah</em></li>
-                    <li>Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment<br><em>Zhiyu Xue, Zimo Qi, Guangliang Liu, Bocheng Chen and Ramtin Pedarsani</em></li>
-                    <li>A Systematic Taxonomy of Failure Modes in Retrieval-Augmented Generation Systems<br><em>Anupama Garani</em></li>
-                    <li>Improving the Faithfulness of LLM-based Abstractive Summarization with Span-level Unlikelihood Training<br><em>Sicong Huang, Qianqi Yan, Shengze Wang and Ian Lane</em></li>
-                    <li>Context Misleads LLMs: The Role of Context Filtering in Maintaining Safe Alignment of LLMs<br><em>Jinhwa Kim and Ian Harris</em></li>
-                    <li>MASCOT: Towards Trustworthy Multi-Agent Socio-Collaborative Companion Systems<br><em>Yiyang Wang, Yiqiao Jin, Alex Cabral and Josiah Hester</em></li>
-                    <li>Multi-Turn Jailbreaking of Aligned LLMs via Lexical Anchor Tree Search<br><em>Devang Kulshreshtha, Hang Su, Chinmay Hegde and Haohan Wang</em></li>
-                    <li>The ACUTE Protocol: Operationalizing Language Model Activations for Better Calibration, Utility, and Trust<br><em>Nishant Subramani, Palash Goyal, Yiwen Song, Mani Malek, Yuan Xue, Tomas Pfister and Hamid Palangi</em></li>
-                    <li>Lexical Familiarity Predicts Processing Depth for Nonliteral Language in Large Language Models<br><em>Lang-Ching Yeh, Yu-Chieh Wang and Shu-Kai Hsieh</em></li>
-                    <li>Did You Forget What I Asked? Prospective Memory Failures in Large Language Models<br><em>Avni Mittal</em></li>
-                    <li>Difficulty Perception in the Reasoning of LLMs<br><em>Quang Minh Nguyen, Uzair Ahmed and Taegyoon Kim</em></li>
-                    <li>Cultural Counterfactuals: Evaluating Cultural Biases in Large Vision-Language Models with Counterfactual Examples<br><em>Phillip Howard, Xin Su and Kathleen C. Fraser</em></li>
-                    <li>Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese<br><em>Rian Touchent</em></li>
-                    <li>Toward Dialect-Aware Safety Evaluation for Arabic Large Language Models<br><em>Wajdi Zaghouani</em></li>
-                  </ul>
-                </td>
-              </tr>
-              <tr><td>10:30 – 11:00</td><td><strong>Break</strong></td></tr>
-              <tr><td>11:00 – 11:45</td><td><strong>Keynote 2</strong> – Lilly Weng</td></tr>
-              <tr>
-                <td>11:45 – 12:25</td>
-                <td>
-                  <strong>Oral Session</strong>
-                  <ul class="mt-2" style="padding-left:1.2rem; font-size:.9rem;">
-                    <li>Through a Compressed Lens: Investigating The Impact of Quantization on Factual Knowledge Recall<br><em>Qianli Wang, Mingyang Wang, Nils Feldhus, Simon Ostermann, Yuan Cao, Hinrich Schuetze, Sebastian Möller and Vera Schmitt</em></li>
-                    <li>ClaimCLAIRE: A Trust-Aware Multi-Component Fact-Checking Agent for Open-World Claims<br><em>Xinman Liu and Mayank Sharma</em></li>
-                    <li>Fairness Failure Modes of Multimodal LLMs<br><em>Canyu Chen, Anglin Cai, Joan Nwatu, Yale Li, Jessica Hullman, Rada Mihalcea, Kathleen McKeown and Manling Li</em></li>
-                  </ul>
-                </td>
-              </tr>
-              <tr><td>12:25 – 12:30</td><td><strong>Closing Remarks</strong></td></tr>
-            </tbody>
-          </table>
+          <div class="program-schedule">
+
+            <div class="prog-slot-header">09:00 – 09:05</div>
+            <div class="prog-slot-body">Opening Remarks</div>
+
+            <div class="prog-slot-header">09:05 – 09:50</div>
+            <div class="prog-slot-body"><strong>Keynote 1</strong> – Michael Johnston</div>
+
+            <div class="prog-slot-header">09:50 – 10:30</div>
+            <div class="prog-slot-body">
+              <strong>Poster Session</strong> <span style="color:#666;">(continues during the break)</span>
+              <ul class="prog-paper-list">
+                <li>Evaluating Cross-Lingual Behavior and Consistency of Multimodal Large Language Models<br><em>Hao Wang, Pinzhi Huang and Daisuke Kawahara</em></li>
+                <li>Responsible Federated LLMs via Safety Filtering and Constitutional AI<br><em>Eunchung Noh and Jeonghun Baek</em></li>
+                <li>Uncertainty-Aware Proxy Attribute Reasoning for Reliable Media Bias Detection<br><em>Chin-Po Chen, Jeng-Lin Li and Ming-Ching Chang</em></li>
+                <li>Quantifying LLM Safety Degradation Under Repeated Attacks Using Survival Analysis<br><em>Zvi Topol</em></li>
+                <li>ChatbotManip: a Dataset to Facilitate Evaluation and Oversight of Manipulative Chatbot Behaviour<br><em>Jack Luigi Henry Contro, Simrat Deol, Martim Brandao and Yulan He</em></li>
+                <li>Controllable Pareto Trade-off between Fairness and Accuracy<br><em>Yongkang Du, Jieyu Zhao, Yijun Yang and Tianyi Zhou</em></li>
+                <li>What are They Thinking? Delineation, Probing, and Tracking of Concepts in LLMs<br><em>Mohamed Abdelwahab, Michelle Yu Collins, Sihan Chen, Yi Cheng Zhao, Zafarullah Mahmood, Jiading Zhu, Soliman Ali and Jonathan Rose</em></li>
+                <li>Hair-Trigger Alignment: Black-Box Evaluation Cannot Guarantee Post-Update Alignment<br><em>Yavuz Faruk Bakman, Duygu Nur Yaldiz, Salman Avestimehr and Sai Praneeth Karimireddy</em></li>
+                <li>Teaching People LLM's Errors and Getting it Right<br><em>Nathan Stringham, Fateme Hashemi Chaleshtori, Xinyuan Yan, Zhichao Xu, Bei Wang and Ana Marasovic</em></li>
+                <li>Linear Probes Detect Task Format, Not Reasoning Mode in Language Model Hidden States<br><em>Subramanyam Sahoo, Vinija Jain, Aman Chadha and Divya Chaudhary</em></li>
+                <li>KoLegalQA: A Korean Legal QA Dataset for Trustworthy and Explanation-Grounded Legal AI<br><em>Yongtae Lee, Surin Lee, Sumin Kim, S M Wahidur Rahman and Heung-No Lee</em></li>
+                <li>On the Non-Identifiability of Steering Vectors in Large Language Models<br><em>Sohan Venkatesh and Ashish Mahendran Kurapath</em></li>
+                <li>Authorization-First Retrieval: Enforcing Least Privilege in Multi-Agent RAG Systems<br><em>Rohith Namboothiri</em></li>
+                <li>PII Jailbreaking in LLMs via Activation Steering Reveals Personal Information Leakage<br><em>Krishna Kanth Nakka, Xue Jiang, Dmitrii Usynin and Xuebing Zhou</em></li>
+                <li>Coercion Suppression Increases Preference Hallucinations via a Deceptive Bypass in K-Level Negotiation Agents<br><em>Jihye Kim</em></li>
+                <li>Purdah and Patriarchy: Evaluating and Mitigating South Asian Biases in Open-Ended Multilingual LLM Generations<br><em>Mamnuya Rinki, Chahat Raj, Anjishnu Mukherjee and Ziwei Zhu</em></li>
+                <li>Ghost Context: Measuring Cross-Context Interference in Long-Context Language Models<br><em>Rohith Namboothiri</em></li>
+                <li>Understanding the Effects of Safety Unalignment on Reasoning- and Instruction-Tuned Large Language Models<br><em>John Timothy Halloran</em></li>
+                <li>ReacTOD: Bounded Neuro-Symbolic Agentic NLU for Zero-Shot Dialogue State Tracking<br><em>Yanjun Lin, Zimo Xiao, Kartik Natarajan, Mahesh Sankaranarayanan, Niraj Nawanit, Rakshit Parashar, Austin Zhang, Karthik Konaraddi, Rishita Mote and Wei Niu</em></li>
+                <li>Geometric Deviation as an Unsupervised Pre-Generation Reliability Signal: Probing LLM Representations for Answerability<br><em>Yucheng Du</em></li>
+                <li>Re-Mask and Redirect: Exploiting Denoising Irreversibility in Diffusion Language Models<br><em>Arth Singh</em></li>
+                <li>Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection<br><em>Yusser Al Ghussin, Daniil Gurgurov, Tanja Baeumel, Josef Van Genabith, Patrick Schramowski and Simon Ostermann</em></li>
+                <li>CARE: A Conformal Safety Layer for Medical Summarization<br><em>Suhana Bedi, Bridget Lin, Anson Zhou, Jenelle A Jindal, Chloe O'Connell Stanwyck, Sanmi Koyejo and Nigam Shah</em></li>
+                <li>Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment<br><em>Zhiyu Xue, Zimo Qi, Guangliang Liu, Bocheng Chen and Ramtin Pedarsani</em></li>
+                <li>A Systematic Taxonomy of Failure Modes in Retrieval-Augmented Generation Systems<br><em>Anupama Garani</em></li>
+                <li>Improving the Faithfulness of LLM-based Abstractive Summarization with Span-level Unlikelihood Training<br><em>Sicong Huang, Qianqi Yan, Shengze Wang and Ian Lane</em></li>
+                <li>Context Misleads LLMs: The Role of Context Filtering in Maintaining Safe Alignment of LLMs<br><em>Jinhwa Kim and Ian Harris</em></li>
+                <li>MASCOT: Towards Trustworthy Multi-Agent Socio-Collaborative Companion Systems<br><em>Yiyang Wang, Yiqiao Jin, Alex Cabral and Josiah Hester</em></li>
+                <li>Multi-Turn Jailbreaking of Aligned LLMs via Lexical Anchor Tree Search<br><em>Devang Kulshreshtha, Hang Su, Chinmay Hegde and Haohan Wang</em></li>
+                <li>The ACUTE Protocol: Operationalizing Language Model Activations for Better Calibration, Utility, and Trust<br><em>Nishant Subramani, Palash Goyal, Yiwen Song, Mani Malek, Yuan Xue, Tomas Pfister and Hamid Palangi</em></li>
+                <li>Lexical Familiarity Predicts Processing Depth for Nonliteral Language in Large Language Models<br><em>Lang-Ching Yeh, Yu-Chieh Wang and Shu-Kai Hsieh</em></li>
+                <li>Did You Forget What I Asked? Prospective Memory Failures in Large Language Models<br><em>Avni Mittal</em></li>
+                <li>Difficulty Perception in the Reasoning of LLMs<br><em>Quang Minh Nguyen, Uzair Ahmed and Taegyoon Kim</em></li>
+                <li>Cultural Counterfactuals: Evaluating Cultural Biases in Large Vision-Language Models with Counterfactual Examples<br><em>Phillip Howard, Xin Su and Kathleen C. Fraser</em></li>
+                <li>Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese<br><em>Rian Touchent</em></li>
+                <li>Toward Dialect-Aware Safety Evaluation for Arabic Large Language Models<br><em>Wajdi Zaghouani</em></li>
+              </ul>
+            </div>
+
+            <div class="prog-slot-header">10:30 – 11:00</div>
+            <div class="prog-slot-body">Break</div>
+
+            <div class="prog-slot-header">11:00 – 11:45</div>
+            <div class="prog-slot-body"><strong>Keynote 2</strong> – Lilly Weng</div>
+
+            <div class="prog-slot-header">11:45 – 12:25</div>
+            <div class="prog-slot-body">
+              <strong>Oral Session</strong>
+              <ul class="prog-paper-list">
+                <li>Through a Compressed Lens: Investigating The Impact of Quantization on Factual Knowledge Recall<br><em>Qianli Wang, Mingyang Wang, Nils Feldhus, Simon Ostermann, Yuan Cao, Hinrich Schuetze, Sebastian Möller and Vera Schmitt</em></li>
+                <li>ClaimCLAIRE: A Trust-Aware Multi-Component Fact-Checking Agent for Open-World Claims<br><em>Xinman Liu and Mayank Sharma</em></li>
+                <li>Fairness Failure Modes of Multimodal LLMs<br><em>Canyu Chen, Anglin Cai, Joan Nwatu, Yale Li, Jessica Hullman, Rada Mihalcea, Kathleen McKeown and Manling Li</em></li>
+              </ul>
+            </div>
+
+            <div class="prog-slot-header">12:25 – 12:30</div>
+            <div class="prog-slot-body">Closing Remarks</div>
+
+          </div>
 
         </div>
       </div>
